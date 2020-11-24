@@ -33,7 +33,7 @@ def main(argv):
 
     # create file and write the header
     writer = csv.writer(file)
-    writer.writerow(['time', 'sound', 'accel_x', 'accel_y', 'accel_z', 'gyro_x', 'gyro_y', 'gyro_z'])
+    writer.writerow(['date', 'sound', 'accel_x', 'accel_y', 'accel_z', 'gyro_x', 'gyro_y', 'gyro_z'])
 
     # collect data
     while True:
@@ -56,4 +56,4 @@ def main(argv):
     p.terminate()
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+    main(sys.argv[1:])
